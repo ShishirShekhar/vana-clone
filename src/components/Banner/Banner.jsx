@@ -13,11 +13,12 @@ const Banner = (props) => {
   }
 
   return (
-    <div className="container mx-auto min-w-full bg-teal-900 p-5 rounded-3xl text-white text-lg flex justify-between items-center">
-      <div className="flex justify-center w-full gap-4 items-center">
+    <div className="bg-teal-900 px-10 py-4 rounded-xl text-white text-lg flex justify-between md:rounded-3xl lg:items-center">
+      <div className="flex flex-col w-full gap-2 items-center md:items-start lg:gap-4 lg:justify-center lg:items-center lg:flex-row">
 
-        <img src={sun} alt="sun" />
-        <p className="text-center">
+        <img src={sun} alt="sun" className="hidden lg:block lg:w-fit" />
+        <button className="text-sm font-bold border-2 border-white rounded-3xl w-32 lg:hidden">WE'RE HIRING</button>
+        <p className="lg:text-center">
           Join our mission to shift the flow of data for a more prosperous world
         </p>
         <a href="https://jobs.lever.co/Vana" target="_blank" rel="noopener noreferrer">
@@ -26,7 +27,7 @@ const Banner = (props) => {
 
       </div>
 
-      <img src={cross} alt="cross" className="cursor-pointer" onClick={handleClick} />
+      <img src={cross} alt="cross" className="cursor-pointer hidden md:block" onClick={handleClick} />
     </div>
   );
 };

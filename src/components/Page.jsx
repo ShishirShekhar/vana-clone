@@ -9,7 +9,7 @@ const Page = () => {
   const [banner, useBanner] = useState(true);
 
     return (
-        <div className='p-7 font-DM'>
+        <div className='font-DM md:p-7'>
             {banner && <Banner useBanner={useBanner} />}
             <Body />
         </div>

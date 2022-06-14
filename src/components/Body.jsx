@@ -10,7 +10,7 @@ import Footer from './Footer/Footer';
 
 const Body = () => {
   return (
-    <div className='my-5'>
+    <div className='md:my-5'>
         <Home />
         <WebDes />
         <Cards />

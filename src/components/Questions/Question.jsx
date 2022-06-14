@@ -12,14 +12,14 @@ const Question = ({ question, answer }) => {
     };
 
     return (
-        <div className='flex flex-col bg-white p-5 m-2 w-10/12 rounded-3xl border-2 border-black'>
-            <div className='flex flex-row justify-between'>
-                <h1 className='text-2xl font-bold'>{question}</h1>
-                <img src={showAnswer ? close : plus} alt="plus" className='cursor-pointer' onClick={handleClick} />
+        <div className='flex flex-col bg-white rounded-3xl border-2 border-black w-full'>
+            <div className='flex flex-row justify-between p-5'>
+                <h1 className='text-xl font-bold md:text-2xl'>{question}</h1>
+                <img src={showAnswer ? close : plus} alt="plus" className='cursor-pointer w-6' onClick={handleClick} />
             </div>
             {
                 showAnswer &&
-                <div className='text-xl leading-10 pt-5 pb-3'>
+                <div className='text-lg leading-10 px-5 py-5 md:pt-5 md:pb-3 md:text-xl'>
                     {answer}
                 </div>
             }

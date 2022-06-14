@@ -12,6 +12,13 @@ module.exports = {
         'world-map': "url('/src/images/world-map.png')",
         'sun-mountain': "url('/src/images/sun_mountain.png')"
       }
+    },
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      '50%': '50%',
+      '70%': '70%',
     }
   },
   plugins: [],

@@ -2,8 +2,8 @@ import React from 'react';
 
 const FooterInfo = ({ heading, values }) => {
   return (
-    <div className='px-10'>
-        <h1 className='text-md font-bold pb-7 text-white'>{heading}</h1>
+    <div className='flex flex-col'>
+        <h1 className='text-md font-bold text-white md:pb-7'>{heading}</h1>
         <div className='flex flex-col gap-2 text-gray-300'>
             {
               values.map((value) => (
